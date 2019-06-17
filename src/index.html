@@ -12,7 +12,9 @@
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="assets/css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- Agregamos el id="tema" para poder manipular el link y poder cambiar de color al tema desde el settingService -->
+    <!-- hemos eliminado el href porque lo cargamos desde settingService en el metodo aplicarTema() -->
+    <link id="tema" id="theme" rel="stylesheet">
 
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
