@@ -13,5 +13,4 @@ const appRoutes: Routes = [
 {path: 'register', component: RegisterComponent},
 {path: '**', component: NopagefoundComponent}
 ];
-
 export const APP_ROUTES: ModuleWithProviders = RouterModule.forRoot(appRoutes, { useHash: true});
