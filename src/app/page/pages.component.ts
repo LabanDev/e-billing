@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//Esto nos permite cargar el scipt (custom.js) que contiene a los plugins como el sidebar
+declare function  init_plugins();
 
 @Component({
   selector: 'app-pages',
@@ -10,6 +12,7 @@ export class PagesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    init_plugins();
   }
 
 }
